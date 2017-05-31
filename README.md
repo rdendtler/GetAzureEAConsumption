@@ -1,4 +1,4 @@
- #GetAzureEAConsumption
+# GetAzureEAConsumption
 This script is designed to use the new [Azure Consumption API's](https://docs.microsoft.com/en-us/azure/billing/billing-enterprise-api) which replace the old EA Billing API.
 
 To configure the script update the following variables in the script
