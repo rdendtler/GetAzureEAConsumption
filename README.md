@@ -2,15 +2,14 @@
 This script is designed to use the new [Azure Consumption API's](https://docs.microsoft.com/en-us/azure/billing/billing-enterprise-api) which replace the old EA Billing API.
 
 To configure the script update the following variables in the script
-`
-$enrollmentNumber = "<enrollment number>"
-accessKey = "<api billing key>"
 
-$blobAccountName = "<storage account name>"
-$blobAccountKey = "<storage account key>"
-$blobContainerName = "<blob container name>"# GetAzureEAConsumption
+    $enrollmentNumber = "<enrollment number>"
+    accessKey = "<api billing key>"
+    $blobAccountName = "<storage account name>"
+    $blobAccountKey = "<storage account key>"
+    $blobContainerName = "<blob container name>"# GetAzureEAConsumption
 Example Powershell script to download Usage, Pricesheets, Summary and Marketplace charges using the new Azure Consumption API
-`
+
 #Running the App
 the application has two optional parameters
 - Type: which is either detail (default) | summary | pricesheet | marketplace
