@@ -107,6 +107,7 @@ function WriteDataToBlob($data, [string]$reportType, [string]$month)
 # If no month specified, get the current month to download.  Otherwise use passed in parameter
 if ([String]::IsNullOrEmpty($month))
 {
+    $today = Get-Date
     $billingPd = GetBillingPeriods
     if ($type -eq "detail" -and $today.Day -le 5) #if we're getting usage detail and we're in data lag
         {
